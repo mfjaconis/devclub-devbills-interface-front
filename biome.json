@@ -1,0 +1,40 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+    "organizeImports": {
+        "enabled": false
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "correctness": {
+                "noUnusedVariables": {
+                    "level": "error",
+                    "fix": "none"
+                }
+            },
+            "recommended": true,
+            "suspicious": {
+                "noDebugger": "off",
+                "noConsoleLog": "info"
+            },
+            "style": {
+                "noShoutyConstants": "warn",
+                "useConst": {
+                    "level": "warn",
+                    "fix": "unsafe"
+                },
+                "useTemplate": {
+                    "level": "warn",
+                    "fix": "safe"
+                },
+                "useNamingConvention": {
+                    "level": "error",
+                    "options": {
+                        "strictCase": false
+                    }
+                },
+                "noNonNullAssertion": "off"
+            }
+        }
+    }
+}
