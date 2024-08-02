@@ -8,7 +8,7 @@ export const Container = styled.div`
 
     h2{
         font-size: 1.25rem;
-        color: ${theme.colors.ligth};
+        color: ${theme.colors.white};
         font-weight: 700;
     }
 
