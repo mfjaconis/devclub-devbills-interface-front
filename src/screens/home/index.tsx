@@ -3,6 +3,7 @@ import { Button } from "../../components/button";
 import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
+import { ButtonIcon } from "./../../components/button-icons/index";
 import { Filters, Header, InputGroup, Main, Section } from "./styles";
 
 export function Home() {
@@ -36,6 +37,8 @@ export function Home() {
 								label="Fim"
 								placeholder="dd/mm/yyyy"
 							/>
+
+							<ButtonIcon />
 						</InputGroup>
 					</Filters>
 				</Section>
