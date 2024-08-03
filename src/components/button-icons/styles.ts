@@ -22,6 +22,7 @@ export const Container = styled.button`
     svg{
         fill:${theme.colors.black};
         width: 3rem;
-        height: 1.25rem;
+        height: 1.75rem;
+        font-weight: bold;
     }
 `;

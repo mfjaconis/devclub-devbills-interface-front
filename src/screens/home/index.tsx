@@ -4,7 +4,8 @@ import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
 import { ButtonIcon } from "./../../components/button-icons/index";
-import { Filters, Header, InputGroup, Main, Section } from "./styles";
+import { Card } from "./../../components/card/index";
+import { Balance, Filters, Header, InputGroup, Main, Section } from "./styles";
 
 export function Home() {
 	return (
@@ -41,6 +42,11 @@ export function Home() {
 							<ButtonIcon />
 						</InputGroup>
 					</Filters>
+					<Balance>
+						<Card title="Saldo" amount={1000000} />
+						<Card title="Saldo" amount={1000000} variant="incomes" />
+						<Card title="Saldo" amount={1000000} variant="expenses" />
+					</Balance>
 				</Section>
 				<aside></aside>
 			</Main>
