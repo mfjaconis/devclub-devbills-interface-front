@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Category, CreateCategory } from "./api-types";
 
-export class APIServices {
+export class APIService {
 	private static client = axios.create({
 		baseURL: import.meta.env.VITE_API_URL,
 	});
@@ -9,7 +9,7 @@ export class APIServices {
 	static async createCategory(
 		createCategoryData: CreateCategory,
 	): Promise<Category> {
-		const { data } = await APIServices.client.post<Category>(
+		const { data } = await APIService.client.post<Category>(
 			"/categories",
 			createCategoryData,
 		);
@@ -18,7 +18,7 @@ export class APIServices {
 	}
 
 	static async getCategories(): Promise<Category[]> {
-		const { data } = await APIServices.client.get<Category[]>("/categories");
+		const { data } = await APIService.client.get<Category[]>("/categories");
 
 		return data;
 	}
