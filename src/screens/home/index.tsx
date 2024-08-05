@@ -2,6 +2,7 @@ import { InputMask } from "@react-input/mask";
 import { CategoriesPieChart } from "../../components/categories-pie-chart";
 import { CreateCategoryDialog } from "../../components/create-category-dialog";
 import { CreateTransactionDialog } from "../../components/create-transaction-dialog";
+import { FinancialEvolutionBarChart } from "../../components/financial-evolution-bar-chart";
 import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
@@ -92,7 +93,9 @@ export function Home() {
 								<ButtonIcon />
 							</ChartAction>
 						</header>
-						<ChartContent></ChartContent>
+						<ChartContent>
+							<FinancialEvolutionBarChart />
+						</ChartContent>
 					</ChartContainer>
 				</Section>
 				<Aside>
