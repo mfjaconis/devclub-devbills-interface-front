@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# DevBills Interface - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **DevBills Interface** é o frontend de uma aplicação desenvolvida como parte do **DevClub**. Este projeto consiste em uma interface web responsiva e interativa para gerenciar contas e despesas, consumindo a **DevBills API** (backend). O frontend foi desenvolvido utilizando **React.js** e outras tecnologias modernas para garantir uma experiência de usuário fluida e eficiente.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Listagem de Contas**: Exibe todas as contas cadastradas.
+- **Listagem de Despesas**: Exibe todas as despesas associadas a uma conta.
+- **Criação de Contas e Despesas**: Formulários para adicionar novas contas e despesas.
+- **Atualização e Exclusão**: Permite editar e excluir contas e despesas existentes.
+- **Autenticação**: Sistema de login e registro de usuários.
+- **Design Responsivo**: Layout adaptável para diferentes tamanhos de tela (desktop, tablet e mobile).
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router**: Para gerenciamento de rotas na aplicação.
+- **Axios**: Para requisições HTTP à API backend.
+- **Context API**: Para gerenciamento de estado global (ex: autenticação).
+- **Styled Components**: Para estilização dos componentes.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto Localmente
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Siga os passos abaixo para rodar o projeto em sua máquina local:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/mfjaconis/devclub-devbills-interface-front.git
+ 
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd devclub-devbills-interface-front
+ 
+3. Instale as dependências:
+   ```bash
+   yarn install
+   
+4. Inicie o servidor de desenvolvimento:
+  ```bash
+   yarn dev
