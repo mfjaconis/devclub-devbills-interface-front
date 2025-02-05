@@ -38,3 +38,4 @@ Siga os passos abaixo para rodar o projeto em sua máquina local:
 4. Inicie o servidor de desenvolvimento:
   ```bash
    yarn dev
+ ```
